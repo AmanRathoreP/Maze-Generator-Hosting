@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Micromouse Maze Generator</title>
+<base href="/" />
+<link rel="stylesheet" href="css/app.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link href="maze_generator.styles.css" rel="stylesheet" />
+</head>
+<body>
+<div id="app">
+<div class="loading-screen">
+<div class="loading-content">
+<h1>Micromouse Maze Generator</h1>
+<div class="loading-spinner"></div>
+<div class="author-info">
+<p><strong>Developed by:</strong> Aman Rathore</p>
+<p><a href="https://amanr.me" target="_blank">amanr.me</a></p>
+<p><a href="mailto:aman.proj.rel@gmail.com">aman.proj.rel@gmail.com</a></p>
+</div>
+<div class="version-info">
+<p>🎯 Generate professional micromouse mazes</p>
+<p>📐 Configurable algorithms & export formats</p>
+<p>💎 Premium version available - No ads, unlimited exports</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+// GitHub Pages SPA redirect handler
+(function(l) {
+if (l.search[1] === '/' ) {
+var decoded = l.search.slice(1).split('&').map(function(s) {
+return s.replace(/~and~/g, '&')
+}).join('?');
+window.history.replaceState(null, null,
+l.pathname.slice(0, -1) + decoded + l.hash
+);
+}
+}(window.location))
+</script>
+<script src="js/mazeRenderer.js"></script>
+<script src="_framework/blazor.webassembly.js"></script>
+<script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
+</body>
+</html>
